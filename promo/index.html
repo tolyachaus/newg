@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акції та пропозиції | Дитячий центр «NewG»</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo-brand">
+        <img src="https://newg.com.ua/img/logo.jpg" alt="NewG Logo">
+        <span class="logo-text">New<span>G</span></span>
+      </a>
+      <nav class="nav-desktop">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html#services" class="nav-link">Послуги</a></li>
+          <li class="nav-item"><a href="../index.html#gallery" class="nav-link">Галерея</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link" style="color: var(--primary-red);">Акції</a></li>
+          <li class="nav-item"><a href="../blog/index.html" class="nav-link">Блог</a></li>
+          <li class="nav-item"><a href="../index.html#contact" class="nav-link">Контакти</a></li>
+        </ul>
+        <button class="btn btn-primary" data-modal="probeModal">ПРОБНЕ ЗАНЯТТЯ</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top: 120px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Спеціальні пропозиції</span>
+        <h2 class="section-title">Акції дитячого центру «NewG»</h2>
+      </div>
+
+      <div class="cards-grid">
+        <article class="article-card">
+          <div class="article-thumb">
+            <img src="https://newg.com.ua/pages/blog/th/32.jpg" alt="Підготовка до школи">
+          </div>
+          <div class="article-body">
+            <span class="article-date">15 Липня 2022</span>
+            <h3 class="article-title">Підготовка до школи (Набір у групи)</h3>
+            <p class="article-snippet">Запрошуємо на індивідуальні та групові заняття з підготовки до школи. Грамота, логіка, письмо, мовлення.</p>
+            <button class="btn btn-primary" data-modal="probeModal" style="margin-top: auto; width: 100%;">Записатись за акцією</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal: Probe -->
+  <div class="modal-backdrop" id="probeModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title">Безкоштовне пробне заняття</h3>
+      <form>
+        <div class="form-group">
+          <label class="form-label" for="probeName">Ваше ім'я</label>
+          <input type="text" id="probeName" class="form-input" placeholder="Олена" required minlength="2">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="probePhone">Номер телефону</label>
+          <input type="tel" id="probePhone" class="form-input" placeholder="+38 050 000 00 00" required minlength="10">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">ЗАПИСАТИСЬ</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

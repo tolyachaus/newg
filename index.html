@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дитячий центр розвитку «NewG» | м. Луцьк</title>
+  <meta name="description" content="Дитячий центр розвитку «NewG» проводить підготовку до школи, пропонує садок повного та неповного дня, театральну майстерню, англійську мову, логопеда та літній табір WONDERcamp у Луцьку.">
+  <meta name="keywords" content="центр розвитку Луцьк, підготовка до школи, дитячий садок Луцьк, NewG, логопед Луцьк, табір для дітей">
+  <link rel="canonical" href="https://newg.com.ua">
+  <link rel="shortcut icon" href="https://newg.com.ua/favicon.ico" type="image/x-icon">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-brand">
+        <img src="https://newg.com.ua/img/logo.jpg" alt="NewG Logo">
+        <span class="logo-text">New<span>G</span></span>
+      </a>
+
+      <nav class="nav-desktop">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Послуги ▼</a>
+            <ul class="dropdown">
+              <li><a href="#minisadok" class="dropdown-link">Садок повного та неповного дня</a></li>
+              <li><a href="#scholl" class="dropdown-link">Підготовка до школи “STREAMS”</a></li>
+              <li><a href="#scholl" class="dropdown-link">Підготовка до школи (2 рази/тижд)</a></li>
+              <li><a href="#theatre" class="dropdown-link">Театральна майстерня</a></li>
+              <li><a href="#english" class="dropdown-link">Англійська мова для дітей</a></li>
+              <li><a href="#logoped" class="dropdown-link">Логопед</a></li>
+              <li><a href="#wondercamp" class="dropdown-link">«WONDERcamp»</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Галерея</a></li>
+          <li class="nav-item"><a href="promo/index.html" class="nav-link">Акції</a></li>
+          <li class="nav-item"><a href="blog/index.html" class="nav-link">Блог</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Контакти</a></li>
+        </ul>
+        <button class="btn btn-primary" data-modal="probeModal">ЗАПИСАТИСЬ НА ПРОБНЕ ЗАНЯТТЯ</button>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#minisadok" class="mobile-nav-link">Садок повного та неповного дня</a></li>
+      <li><a href="#scholl" class="mobile-nav-link">Підготовка до школи STREAMS</a></li>
+      <li><a href="#theatre" class="mobile-nav-link">Театральна майстерня</a></li>
+      <li><a href="#english" class="mobile-nav-link">Англійська мова</a></li>
+      <li><a href="#logoped" class="mobile-nav-link">Логопед</a></li>
+      <li><a href="#wondercamp" class="mobile-nav-link">WONDERcamp</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">Галерея</a></li>
+      <li><a href="promo/index.html" class="mobile-nav-link">Акції</a></li>
+      <li><a href="blog/index.html" class="mobile-nav-link">Блог</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Контакти</a></li>
+    </ul>
+    <button class="btn btn-primary" data-modal="probeModal" style="width: 100%;">ПРОБНЕ ЗАНЯТТЯ</button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">✨ Нова Генерація дошкільників та школярів</div>
+        <h1 class="hero-title">Майбутнє починається тут</h1>
+        <div class="hero-subtitle">Найцінніший вклад - це вклад у дитину!</div>
+        <p class="hero-desc">
+          Кожна дитина народжується обдарованою і її здібності потрібно перетворити у таланти. Ми створюємо найкращі умови, де дитина розширює світогляд, пізнає та розвиває себе і соціально адаптується.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-modal="callmeModal">СКОНТАКТУВАТИ</button>
+          <a href="tel:+380504178282" class="phone-link">
+            📞 050 417 82 82
+          </a>
+          <a href="https://www.instagram.com/newg.lutsk/" target="_blank" class="social-icon-btn" aria-label="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" height="24">
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-slider-wrap">
+        <div class="hero-slider">
+          <div class="hero-slide active">
+            <img src="https://newg.com.ua/pages/bh/174741.jpg" alt="NewG Children Center">
+          </div>
+          <div class="hero-slide">
+            <img src="https://newg.com.ua/pages/bh/001153.jpg" alt="NewG Activities">
+          </div>
+          <div class="hero-slide">
+            <img src="https://newg.com.ua/pages/gallery/1/20250730174209.jpg" alt="NewG Classroom">
+          </div>
+        </div>
+        <div class="slider-dots" id="heroSliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Quote Section -->
+  <section class="mission-section">
+    <div class="container mission-box">
+      <p class="mission-quote">
+        «Наша ціль, як навчального центру, полягає у тому, щоб розкрити в дитині вроджені здібності до дослідництва, розвивати її особистість, дати можливість розуміючи себе зрозуміти оточуючий світ, та мати сміливість творити його по-новому.»
+      </p>
+      <div class="mission-highlight">Добре там, де тебе люблять! ❤️</div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Наші Напрямки</span>
+        <h2 class="section-title">Програми розвитку та навчання</h2>
+        <p class="section-desc">Обирайте найкращі заняття та садочок для всебічного розвитку вашої дитини</p>
+      </div>
+
+      <!-- Service 1: Mini Sadok -->
+      <div class="service-block" id="minisadok">
+        <div class="service-info">
+          <span class="service-age-badge">3-5 РОКІВ</span>
+          <h3 class="service-title">Садок повного та неповного дня</h3>
+          <p>Програма всебічного розвитку дитини в атмосфері турботи та поваги:</p>
+          <ul class="service-list">
+            <li><strong>Ейдетика</strong> — методика розвитку образної пам'яті та мислення</li>
+            <li>Мовний та соціально-емоційний розвиток</li>
+            <li>Логіко-математичний та фізичний розвиток</li>
+            <li>Хореографія (хіп-хоп) та ігрова діяльність</li>
+            <li>Вивчення англійської мови в ігровій формі</li>
+            <li>Розвиток дрібної моторики та LEGO конструювання</li>
+          </ul>
+          <p><strong>Графік:</strong> Повний день (09:00-18:00) | Неповний день (09:00-13:00 / 15:00)</p>
+          <button class="btn btn-secondary" data-modal="probeModal" style="margin-top: 10px; width: fit-content;">Записатись в садок</button>
+        </div>
+        <div class="service-gallery-wrap">
+          <img src="https://newg.com.ua/pages/gallery/1/20250730174209.jpg" alt="Садок NewG">
+        </div>
+      </div>
+
+      <!-- Service 2: School Prep & STREAMS -->
+      <div class="service-block reverse" id="scholl">
+        <div class="service-info">
+          <span class="service-age-badge">5-6 РОКІВ</span>
+          <h3 class="service-title">Підготовка до школи “STREAMS” & Класична</h3>
+          <p><strong>STREAMS</strong> — унікальний комплексний підхід до навчання майбутніх першокласників протягом цілого тижня (Пн-Пт з 9:00 до 15:00):</p>
+          
+          <div class="streams-grid">
+            <div class="stream-item"><div class="stream-letter">S</div><div class="stream-text">Science (Природа)</div></div>
+            <div class="stream-item"><div class="stream-letter">T</div><div class="stream-text">Tech (Експерименти)</div></div>
+            <div class="stream-item"><div class="stream-letter">R</div><div class="stream-text">Reading (Англійська)</div></div>
+            <div class="stream-item"><div class="stream-letter">E</div><div class="stream-text">Engineering (LEGO)</div></div>
+            <div class="stream-item"><div class="stream-letter">A</div><div class="stream-text">Art (Театр/Малювання)</div></div>
+            <div class="stream-item"><div class="stream-letter">M</div><div class="stream-text">Math (Математика)</div></div>
+            <div class="stream-item"><div class="stream-letter">S</div><div class="stream-text">Sports (Хіп-хоп)</div></div>
+          </div>
+
+          <p><strong>Класична підготовка (2 рази на тиждень):</strong> читання, письмо, математика, конструювання LEGO, внутрішня організація та концентрованість.</p>
+          <button class="btn btn-primary" data-modal="probeModal" style="margin-top: 10px; width: fit-content;">Записати на підготовку</button>
+        </div>
+        <div class="service-gallery-wrap">
+          <img src="https://newg.com.ua/pages/gallery/3/20210722165243.jpg" alt="Підготовка до школи">
+        </div>
+      </div>
+
+      <!-- Service 3: Theatre -->
+      <div class="service-block" id="theatre">
+        <div class="service-info">
+          <span class="service-age-badge">5-14 РОКІВ</span>
+          <h3 class="service-title">Театральна майстерня</h3>
+          <p>Theatrical workshop — саме те місце, де дитина дізнається ази акторської майстерності, набуде впевненості у собі, подолає страх виступу перед публікою та зіграє свою першую роль!</p>
+          <ul class="service-list">
+            <li>Сценічна мова та ораторське мистецтво</li>
+            <li>Зняття затисків та страху публічних виступів</li>
+            <li>Постановка вистав та ролей</li>
+          </ul>
+          <button class="btn btn-secondary" data-modal="probeModal" style="margin-top: 10px; width: fit-content;">Спробувати акторство</button>
+        </div>
+        <div class="service-gallery-wrap">
+          <img src="https://newg.com.ua/pages/gallery/5/20250729214907.jpg" alt="Театральна студія NewG">
+        </div>
+      </div>
+
+      <!-- Service 4: English -->
+      <div class="service-block reverse" id="english">
+        <div class="service-info">
+          <span class="service-age-badge">3-14 РОКІВ</span>
+          <h3 class="service-title">Індивідуальна англійська мова</h3>
+          <p><strong>Preschool English (3-6 років, 35 хв):</strong> Заняття проходять в ігровій формі. Усі види активностей супроводжуються англійською мовою, діти засвоюють мову мимоволі та з легкістю.</p>
+          <p><strong>English for School (6-14 років, 50 хв):</strong> Поєднання кращих методичних традицій та сучасних комунікативних технологій для досягнення високих результатів.</p>
+          <button class="btn btn-primary" data-modal="probeModal" style="margin-top: 10px; width: fit-content;">Записатись на англійську</button>
+        </div>
+        <div class="service-gallery-wrap">
+          <img src="https://newg.com.ua/pages/gallery/2/20190927211152.jpg" alt="Англійська мова NewG">
+        </div>
+      </div>
+
+      <!-- Service 5: Logoped -->
+      <div class="service-block" id="logoped">
+        <div class="service-info">
+          <span class="service-age-badge">ВІД 3 РОКІВ</span>
+          <h3 class="service-title">Заняття з логопедом</h3>
+          <p>Практичний досвід допомоги дітям із затримкою мовленнєвого розвитку, дизартрією, диспраксією, РАС та порушенням звуковимови.</p>
+          <ul class="service-list">
+            <li>Сенсорна інтеграція</li>
+            <li>Запуск мовлення через гру, масаж та звукотерапію</li>
+            <li>Формування моторних слідів та наслідування</li>
+            <li>Робота з артикуляційним апаратом (тривалість 30 хв)</li>
+          </ul>
+          <button class="btn btn-secondary" data-modal="probeModal" style="margin-top: 10px; width: fit-content;">Запис до логопеда</button>
+        </div>
+        <div class="service-gallery-wrap">
+          <img src="https://newg.com.ua/pages/gallery/10/20200128160616.jpg" alt="Логопед NewG">
+        </div>
+      </div>
+
+      <!-- Service 6: Wondercamp -->
+      <div class="service-block reverse" id="wondercamp">
+        <div class="service-info">
+          <span class="service-age-badge">6-10 РОКІВ</span>
+          <h3 class="service-title">Літній табір «WONDERcamp»</h3>
+          <p>Готові до неймовірних пригод? Веселі ігри, творчість і нові друзі чекають саме на тебе!</p>
+          <ul class="service-list">
+            <li>Водні пригоди та пригодницькі квести</li>
+            <li>Гірські експедиції та екскурсії тропічними лісами</li>
+            <li>Кулінарні експерименти та яскраві вечірки</li>
+            <li>Смачне та корисне харчування від "Сіли Поїли"</li>
+          </ul>
+          <button class="btn btn-primary" data-modal="probeModal" style="margin-top: 10px; width: fit-content;">Забронювати місце в таборі</button>
+        </div>
+        <div class="service-gallery-wrap">
+          <img src="https://newg.com.ua/pages/gallery/11/20250730173632.jpg" alt="WONDERcamp NewG">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Життя центру</span>
+        <h2 class="section-title">Фотогалерея NewG</h2>
+        <p class="section-desc">Подивіться на щасливі посмішки наших вихованців та затишну атмосферу</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://newg.com.ua/pages/gallery/th/20250730181020.jpg" alt="NewG Photo 1">
+          <div class="gallery-overlay">Творчий процес</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://newg.com.ua/pages/gallery/th/20220817194120.jpg" alt="NewG Photo 2">
+          <div class="gallery-overlay">Наші вихованці</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://newg.com.ua/pages/gallery/th/20220817194104.jpg" alt="NewG Photo 3">
+          <div class="gallery-overlay">Веселі ігри</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://newg.com.ua/pages/gallery/th/20220817194033.jpg" alt="NewG Photo 4">
+          <div class="gallery-overlay">Розвиток моторики</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://newg.com.ua/pages/gallery/th/20210722164829.jpg" alt="NewG Photo 5">
+          <div class="gallery-overlay">LEGO конструювання</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://newg.com.ua/pages/gallery/th/20200803160537.jpg" alt="NewG Photo 6">
+          <div class="gallery-overlay">Свята та вистави</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Promo Preview Cards -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Новини та Акції</span>
+        <h2 class="section-title">Останні публікації</h2>
+      </div>
+
+      <div class="cards-grid">
+        <article class="article-card">
+          <div class="article-thumb">
+            <img src="https://newg.com.ua/pages/blog/th/32.jpg" alt="Підготовка до школи">
+          </div>
+          <div class="article-body">
+            <span class="article-date">15 Липня 2022</span>
+            <h3 class="article-title">Підготовка до школи в NewG</h3>
+            <p class="article-snippet">Запрошуємо на індивідуальні та групові заняття з підготовки до школи. Грамота, логіка, письмо та мовлення...</p>
+            <a href="promo/index.html" style="color: var(--primary-red); font-weight: 700; margin-top: auto;">Читати далі →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-thumb">
+            <img src="https://newg.com.ua/pages/blog/th/29.jpg" alt="Театральна студія">
+          </div>
+          <div class="article-body">
+            <span class="article-date">29 Липня 2025</span>
+            <h3 class="article-title">Готуємо майбутніх акторів</h3>
+            <p class="article-snippet">Вміти виражати свої емоції — робота нелегка. Дізнайтесь, як у нашій академії розкривають творчий потенціал дітей...</p>
+            <a href="blog/index.html" style="color: var(--primary-red); font-weight: 700; margin-top: auto;">Читати далі →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-thumb">
+            <img src="https://newg.com.ua/pages/blog/th/24.jpg" alt="Lego заняття">
+          </div>
+          <div class="article-body">
+            <span class="article-date">03 Січня 2020</span>
+            <h3 class="article-title">Lego-заняття для дітей у Луцьку</h3>
+            <p class="article-snippet">Більше ніж просто гра: відкриваємо курс Lego-занять, де діти конструюють та розвивають логіку...</p>
+            <a href="blog/index.html" style="color: var(--primary-red); font-weight: 700; margin-top: auto;">Читати далі →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact Section -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h4>Контакти</h4>
+          <div class="footer-contact-item">
+            📍 <span><strong>Адреса:</strong> м. Луцьк, вул. Коперника, 13 в</span>
+          </div>
+          <div class="footer-contact-item">
+            📞 <span><strong>Телефон:</strong> <a href="tel:+380504178282">050 417 82 82</a></span>
+          </div>
+          <div class="footer-contact-item">
+            ✉️ <span><strong>Email:</strong> info@newg.com.ua</span>
+          </div>
+        </div>
+
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="https://newg.com.ua/img/logo.jpg" alt="NewG Logo">
+          </a>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/NewG.Lutsk" target="_blank" class="social-icon-btn" aria-label="Facebook">
+              📘
+            </a>
+            <a href="https://www.instagram.com/newg.lutsk/" target="_blank" class="social-icon-btn" aria-label="Instagram">
+              📸
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-cta">
+          <span style="font-family: var(--font-heading); font-size: 1.6rem; color: #ffffff;">БЕЗКОШТОВНЕ ПРОБНЕ ЗАНЯТТЯ</span>
+          <button class="btn btn-primary" data-modal="probeModal">ЗАПИСАТИСЬ ЗАРАЗ</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Дитячий центр розвитку «NewG». Усі права захищено.</p>
+        <p>Design inspired by Omlet & Dev ready for GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Probe (Free Trial Lesson) -->
+  <div class="modal-backdrop" id="probeModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title">Безкоштовне пробне заняття</h3>
+      <p class="modal-subtitle">Заповніть форму, і ми зателефонуємо вам для узгодження зручного часу!</p>
+      <form>
+        <div class="form-group">
+          <label class="form-label" for="probeName">Ваше ім'я</label>
+          <input type="text" id="probeName" class="form-input" placeholder="Олена" required minlength="2">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="probePhone">Номер телефону</label>
+          <input type="tel" id="probePhone" class="form-input" placeholder="+38 050 000 00 00" required minlength="10">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">ЗАПИСАТИСЬ</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Call Me -->
+  <div class="modal-backdrop" id="callmeModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title">Зателефонуйте мені!</h3>
+      <p class="modal-subtitle">Залиште ваш номер, і наш адміністратор зв'яжеться з вами протягом 15 хвилин.</p>
+      <form>
+        <div class="form-group">
+          <label class="form-label" for="callName">Ваше ім'я</label>
+          <input type="text" id="callName" class="form-input" placeholder="Олександр" required minlength="2">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="callPhone">Номер телефону</label>
+          <input type="tel" id="callPhone" class="form-input" placeholder="+38 050 000 00 00" required minlength="10">
+        </div>
+        <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">ВІДПРАВИТИ</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- JS Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
