@@ -154,6 +154,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4000);
   }
 
+  // Service Category Filtering
+  const filterPills = document.querySelectorAll('.filter-pill');
+  const serviceBlocks = document.querySelectorAll('.service-block');
+
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+
+      const filterCategory = pill.getAttribute('data-filter');
+
+      serviceBlocks.forEach(block => {
+        const categories = block.getAttribute('data-category') || '';
+        if (filterCategory === 'all' || categories.includes(filterCategory)) {
+          block.style.display = 'grid';
+          setTimeout(() => {
+            block.style.opacity = '1';
+          }, 50);
+        } else {
+          block.style.opacity = '0';
+          block.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Photo Gallery Lightbox
+  const galleryItems = document.querySelectorAll('.gallery-item img');
+  const lightbox = document.getElementById('lightboxModal');
+  const lightboxImg = document.getElementById('lightboxImg');
+
+  if (lightbox && lightboxImg) {
+    galleryItems.forEach(img => {
+      img.parentElement.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt || 'Gallery photo';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox || e.target.classList.contains('modal-close-btn')) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
   // Forms Handling
   const forms = document.querySelectorAll('form');
   forms.forEach(form => {

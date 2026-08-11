@@ -85,11 +85,28 @@
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge">✨ Нова Генерація дошкільників та школярів</div>
-        <h1 class="hero-title">Майбутнє починається тут</h1>
+        <h1 class="hero-title"><span class="gradient-text">Майбутнє</span> починається тут</h1>
         <div class="hero-subtitle">Найцінніший вклад - це вклад у дитину!</div>
         <p class="hero-desc">
           Кожна дитина народжується обдарованою і її здібності потрібно перетворити у таланти. Ми створюємо найкращі умови, де дитина розширює світогляд, пізнає та розвиває себе і соціально адаптується.
         </p>
+        
+        <!-- Trust Stats -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Вихованців</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Років досвіду</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">7</span>
+            <span class="stat-label">Напрямків</span>
+          </div>
+        </div>
+
         <div class="hero-actions">
           <button class="btn btn-primary" data-modal="callmeModal">СКОНТАКТУВАТИ</button>
           <a href="tel:+380504178282" class="phone-link">
@@ -137,8 +154,17 @@
         <p class="section-desc">Обирайте найкращі заняття та садочок для всебічного розвитку вашої дитини</p>
       </div>
 
+      <!-- Category Filter Pills -->
+      <div class="filter-pills">
+        <button class="filter-pill active" data-filter="all">🌟 Усі програми</button>
+        <button class="filter-pill" data-filter="sadok">👶 Садочок (3-5 років)</button>
+        <button class="filter-pill" data-filter="school">🎒 Підготовка до школи (5-6 років)</button>
+        <button class="filter-pill" data-filter="creative">🎭 Творчість & Мови</button>
+        <button class="filter-pill" data-filter="camp">☀️ Табір WONDERcamp</button>
+      </div>
+
       <!-- Service 1: Mini Sadok -->
-      <div class="service-block" id="minisadok">
+      <div class="service-block" id="minisadok" data-category="sadok">
         <div class="service-info">
           <span class="service-age-badge">3-5 РОКІВ</span>
           <h3 class="service-title">Садок повного та неповного дня</h3>
@@ -160,7 +186,7 @@
       </div>
 
       <!-- Service 2: School Prep & STREAMS -->
-      <div class="service-block reverse" id="scholl">
+      <div class="service-block reverse" id="scholl" data-category="school">
         <div class="service-info">
           <span class="service-age-badge">5-6 РОКІВ</span>
           <h3 class="service-title">Підготовка до школи “STREAMS” & Класична</h3>
@@ -185,7 +211,7 @@
       </div>
 
       <!-- Service 3: Theatre -->
-      <div class="service-block" id="theatre">
+      <div class="service-block" id="theatre" data-category="creative">
         <div class="service-info">
           <span class="service-age-badge">5-14 РОКІВ</span>
           <h3 class="service-title">Театральна майстерня</h3>
@@ -203,7 +229,7 @@
       </div>
 
       <!-- Service 4: English -->
-      <div class="service-block reverse" id="english">
+      <div class="service-block reverse" id="english" data-category="creative">
         <div class="service-info">
           <span class="service-age-badge">3-14 РОКІВ</span>
           <h3 class="service-title">Індивідуальна англійська мова</h3>
@@ -217,7 +243,7 @@
       </div>
 
       <!-- Service 5: Logoped -->
-      <div class="service-block" id="logoped">
+      <div class="service-block" id="logoped" data-category="sadok creative">
         <div class="service-info">
           <span class="service-age-badge">ВІД 3 РОКІВ</span>
           <h3 class="service-title">Заняття з логопедом</h3>
@@ -236,7 +262,7 @@
       </div>
 
       <!-- Service 6: Wondercamp -->
-      <div class="service-block reverse" id="wondercamp">
+      <div class="service-block reverse" id="wondercamp" data-category="camp">
         <div class="service-info">
           <span class="service-age-badge">6-10 РОКІВ</span>
           <h3 class="service-title">Літній табір «WONDERcamp»</h3>
@@ -437,6 +463,15 @@
       </form>
     </div>
   </div>
+
+  <!-- Photo Lightbox Modal -->
+  <div class="lightbox-backdrop" id="lightboxModal">
+    <button class="modal-close-btn" style="color: #ffffff;" aria-label="Close photo">&times;</button>
+    <img src="" alt="Gallery Preview" class="lightbox-img" id="lightboxImg">
+  </div>
+
+  <!-- Floating Call Action Button -->
+  <button class="floating-call-btn" data-modal="callmeModal" aria-label="Зателефонувати">📞</button>
 
   <!-- Back to Top Button -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
