@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --primary-red: #ff000b;
@@ -18,7 +18,7 @@
   --radius-lg: 24px;
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --font-heading: 'Bebas Neue', cursive, sans-serif;
+  --font-heading: 'Comfortaa', 'Nunito', cursive, sans-serif;
   --font-body: 'Montserrat', sans-serif;
 }
 
@@ -160,19 +160,40 @@ img {
   align-items: center;
   gap: 12px;
   font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.logo-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 4px 8px rgba(255, 0, 11, 0.2));
+}
+
+.logo-brand:hover .logo-icon-wrap {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--dark-text);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-g-accent {
+  color: var(--primary-red);
+  background: linear-gradient(135deg, #ff000b 0%, #00b5e8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2.2rem;
   font-weight: 700;
-  color: var(--primary-red);
-}
-
-.logo-brand img {
-  height: 48px;
-  width: auto;
-  border-radius: var(--radius-sm);
-}
-
-.logo-text span {
-  color: var(--secondary-cyan);
 }
 
 .nav-desktop {
